@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'br.com.fiap'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.0.4.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.0.4.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis:2.0.4.RELEASE'
+    implementation 'mysql:mysql-connector-java:5.1.44'
+    implementation 'org.apache.commons:commons-dbcp2:2.1.1'
+    implementation 'javax.xml.bind:jaxb-api:2.3.0'
+    compileOnly 'org.springframework.boot:spring-boot-starter-tomcat:2.0.4.RELEASE'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
